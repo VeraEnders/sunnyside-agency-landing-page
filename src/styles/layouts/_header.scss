@@ -1,0 +1,37 @@
+.header {
+  min-height: 100vh;
+  background-image: url("../assets/images/backgrounds/mobile-header-bg.jpg");
+  @extend %bg-image;
+  @include media-medium {
+    background-image: url("../assets/images/backgrounds/desktop-header-bg.jpg");
+  }
+}
+
+.header__wrapper {
+  padding-top: 2.7rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media-medium {
+    padding-top: 4.6rem;
+    padding-bottom: 17.2rem;
+  }
+}
+
+.header__nav-menu {
+  display: flex;
+}
+
+.header__btn {
+  display: none; 
+  @include media-medium {
+    display: block;
+    margin-left: 6rem;
+  }
+}
+
+.header__arrow {
+  padding-top: 5.6rem;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+@mixin font ($size, $lh: $size, $weight: 600, $ls: normal, $text-transform: none) {
+  font-size: $size;
+  line-height: $lh;
+  font-weight: $weight;
+  letter-spacing: $ls;
+  text-transform: $text-transform;
+}
+
+@mixin media-small {
+  @media screen and (min-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media screen and (min-width: $breakpoint-medium) {
+    @content;
+  }
+}

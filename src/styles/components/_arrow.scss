@@ -1,0 +1,20 @@
+.arrow {
+  animation: jump 1.5s infinite;
+  padding: 2rem;
+  cursor: pointer;
+  @include media-medium {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes jump {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}

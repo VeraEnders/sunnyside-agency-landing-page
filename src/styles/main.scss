@@ -11,8 +11,11 @@
 // Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
-@import "layouts/navigation";
 @import "layouts/footer";
 
 // Components
 @import "components/buttons";
+@import "components/logo";
+@import "components/hamburger";
+@import "components/arrow";
+@import "components/navigation";

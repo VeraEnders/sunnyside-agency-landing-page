@@ -1,0 +1,22 @@
+.nav-menu {
+  display: none; 
+  @include media-medium {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-menu__link {
+  @extend %transition;
+  @extend %font-text;
+  @include font($size: 2rem, $lh: 2.4rem);
+  color: $color-text-link;
+  padding: 0 2.5rem;
+  cursor: pointer;
+  position: relative;
+  @extend %bottom-line;
+  &:hover {
+    color: $color-hovered;
+    @extend %bottom-line-hover;
+  }
+}

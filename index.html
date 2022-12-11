@@ -6,23 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght,SOFT,WONK@700,100,1;900,100,1&display=swap" rel="stylesheet">
   <title>Sunnyside agency landing page</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon.png">
   <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body>
-  <header>
-    About
-    Services
-    Projects
-    Contact
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="logo">
+        <a href="./index.html">
+          <img class="logo__img" src="./src/assets/images/icons/logo.svg" alt="sunnyside logo">
+        </a>
+      </div>
+      <nav>
+        <div class="hamburger">
+          <img class="hamburger__img" src="./src/assets/images/icons/icon-hamburger.svg" alt="#">
+        </div>
+        <div class="header__nav-menu">
+          <ul class="nav-menu ">
+            <li><a class="nav-menu__link" href="#">About</a></li>
+            <li><a class="nav-menu__link" href="#">Services</a></li>
+            <li><a class="nav-menu__link" href="#">Projects</a></li>
+          </ul>
+          <div class="btn header__btn">
+            <a href="#">Contact</a> 
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="heading">
+      <h1>We are creatives</h1>
+    </div>
+
+    <div class="header__arrow">
+      <img class="arrow" src="./src/assets/images/icons/icon-arrow-down.svg" alt="#">
+    </div>
   </header>
 
-  <main> 
-
-    We are creatives
-
+  <main>
     Transform your brand
 
     We are a full-service creative agency specializing in helping brands grow fast. 

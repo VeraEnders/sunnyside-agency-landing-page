@@ -1,0 +1,10 @@
+.hamburger__img {
+  @extend %transition;
+  width: 2.1rem;
+  @include media-small {
+    width: 3rem;
+  }
+  @include media-medium {
+    display: none;
+  }
+}

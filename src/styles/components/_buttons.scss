@@ -1,0 +1,12 @@
+.btn {
+  @extend %transition;
+  @extend %font-brand;
+  @include font($size: 1.6rem, $lh: 2rem, $weight: 700, $text-transform: uppercase);
+  background-color: $color-text-link;
+  padding: 1.8rem 2.8rem;
+  border-radius: 2.8rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-hovered;
+  }
+}

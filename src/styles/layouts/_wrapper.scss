@@ -1,0 +1,6 @@
+.wrapper {
+  padding: 0 2rem;
+  @include media-small {
+    padding: 0 6rem;
+  }
+}

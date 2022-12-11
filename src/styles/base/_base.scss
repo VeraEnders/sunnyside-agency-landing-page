@@ -3,9 +3,27 @@
 }
 
 html {
+  font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
+  @extend %font-text;
+  @include font($size: 2rem, $lh: 2.4rem);
+}
+
+h1 {
+  @extend %transition;
+  @extend %font-brand;
+  @include font($size: 3.5rem, $lh: 4.3rem, $weight: 900, $ls: 0.13em, $text-transform: uppercase);
+  color: $color-text-link;
+  text-align: center;
+  @include media-small {
+    font-size: 6.5rem;
+    line-height: 11.1rem;
+  }
+  @include media-medium {
+    font-size: 9rem;
+  }
 }
